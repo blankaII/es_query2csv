@@ -1,1 +1,1 @@
-Tool for sending user required query to elasticsearch cluster and convert return value into csv format output
+save elasticsearch query result into csv format file with query template and server config settings
