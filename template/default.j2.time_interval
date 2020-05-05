@@ -1,0 +1,16 @@
+{ 
+    "query": { 
+        "bool":{ 
+            "must": [{
+                "range":{ 
+                    "#StartTime": { 
+                        "gte":"2017-06-05T00:00:00",
+                        "lte":"2017-06-16T23:59:59",
+                        "time_zone": "Asia/Taipei"
+                    }
+                }
+            }]
+        }
+    },
+    "_source":["#StartTime"]
+}

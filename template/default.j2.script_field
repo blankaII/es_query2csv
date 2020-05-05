@@ -1,0 +1,24 @@
+{
+    "query":{
+        "match_all":{}
+    },
+    "script_fields":{
+        "my_field1":{
+            "script":{
+                "inline":"1+my_var",
+                "params":{
+                    "my_var":0
+                }
+            }
+        },
+        "my_field2":{
+            "script":{
+                "inline":"1+my_var",
+                "params":{
+                    "my_var":1
+                }
+            }
+        }
+    },
+    "_source":["#field","my_field1","my_field2"]
+}

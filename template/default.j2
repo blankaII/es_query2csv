@@ -1,0 +1,13 @@
+{
+    "query":{
+        "match_all":{}
+    },
+    "script_fields":{
+        "my_field1":{
+            "script":{
+                "inline":"doc['#field'].value*10"
+            }
+        }
+    },
+    "_source":["#field","my_field1"]
+}
